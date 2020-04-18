@@ -24,7 +24,6 @@ public class UserInfoController {
     @ResponseBody
     public String login(@Param("phone") String phone, @Param("password") String password, HttpSession session){
         JSONObject jo=new JSONObject();
-
         UserInfo user = service.findUserByPhone(phone);
         if (user!=null){
             if (user.getPassword().equals(password)){

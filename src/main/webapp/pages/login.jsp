@@ -68,10 +68,10 @@
                     <tr><td><br></td></tr>
                     <tr>
                         <td>
-                            <label class="one"  for="verifyCode">验证码：</label>
+                            <label class="one" for="verifyCode">验证码：</label>
                         </td>
                         <td>
-                            <input id="verifyCode" name="verifyCode" type="text" class="required" value placeholder="请输入验证码" />
+                            <input id="verifyCode" name="verifyCode" type="text" class="required" value="" placeholder="请输入验证码" />
                         </td>
                         <td>
                            <div id="v_container" style="width: 180px;height: 45px;"></div>
@@ -111,6 +111,9 @@
 </body>
 
 <script type="text/javascript">
+
+    var wer=new GVerify("v_container");
+
     $(function () {
         $(".submit").on("click",function () {
            var phone = $("input[name=phone]").val();
@@ -120,11 +123,11 @@
                 alert("请输入手机号码")
                 return;
             }
+
             if (password == ""){
                 alert("密码不能为空")
-                return;
-            }else{
-                $.ajax({
+            }
+            $.ajax({
                     url: "${pageContext.request.contextPath}/user/login.do",
                     type: "post",
                     dataType: "json",
@@ -133,17 +136,18 @@
                         password:password
                     },
                     success: function (data) {
+                        var code=$("input[name=verifyCode]").val();
                         if (data.reuslt=="0"){
                             alert("用户没有完成注册")
                         }else if (data.reuslt=="1"){
                             alert("密码错误")
+                        }else if (wer.validate(code)==false){
+                            alert("验证码错误")
                         }else{
                             location.href="${pageContext.request.contextPath}/main.jsp"
                         }
                     }
                 })
-            }
-
         })
     })
 </script>

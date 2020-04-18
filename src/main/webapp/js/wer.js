@@ -108,6 +108,7 @@
 
         /**验证验证码**/
         validate: function(code){
+            console.log("验证验证码");
             var code = code.toLowerCase();
             var v_code = this.options.code.toLowerCase();
             if(code == v_code){
