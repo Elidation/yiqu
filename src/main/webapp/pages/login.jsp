@@ -137,6 +137,11 @@
                     },
                     success: function (data) {
                         var code=$("input[name=verifyCode]").val();
+
+                        if (code == "") {
+                            alert("验证码不能为空")
+                        }
+
                         if (data.reuslt=="0"){
                             alert("用户没有完成注册")
                         }else if (data.reuslt=="1"){
