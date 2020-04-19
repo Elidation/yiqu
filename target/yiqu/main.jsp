@@ -200,15 +200,15 @@
         <h2 class="title"><a style="color:#F1323B">❤</a>二手房推荐 <a
                 href="#">更多&gt;&gt;</a></h2>
         <div class="index-fang-list">
-                <dl>
-                    <dt><a href="#"><img src="http://image.cxhit.com/" width="286"
-                                         height="188"/></a></dt>
-                    <dd>
-                        <h3><a href="#"></a></h3>
-                        <div class="hui">XXX| XXX | XXX</div>
-                    </dd>
-                </dl>
-
+            <c:forEach items="${oldHouse}" var="oh"> <dl>
+                <dt><a href="#"><img src="http://image.cxhit.com/${oh.houseHeadimg}" width="286"
+                                     height="188"/></a></dt>
+                <dd>
+                    <h3><a href="#"></a></h3>
+                    <div class="hui">${oh.houseLayout}| ${oh.houseArea} | ${oh.houseDecorate}</div>
+                </dd>
+            </dl>
+            </c:forEach>
             <div class="clears"></div>
         </div><!--index-fang-list/-->
 
@@ -219,30 +219,30 @@
 
             <%--左侧栏--%>
             <div class="in-er-left">
-                <a href="#"><img src="images/fangt1.jpg" width="380" height="285"/></a>
+                <a href="#"><img src="${pageContext.request.contextPath}/images/fangt1.jpg" width="380" height="285"/></a>
                 <div class="in-er-left-text"><strong class="fl">闵行南方发的撒的发的司法</strong><strong
                         class="fr alignRight">¥2841</strong></div>
             </div><!--in-er-left/-->
 
             <%--右侧栏--%>
             <div class="in-er-right">
+                <c:forEach items="${rentHouse}" var="rh">
                     <dl>
                         <dt><a href="#"><img
-                                src="http://image.cxhit.com/"
+                                src="http://image.cxhit.com/${rh.houseHeadimg}"
                                 style="width: 150px; height: 115px;" width="150" height="115"/></a></dt>
                         <dd>
                             <h3>
-                                <a href="#"></a>
+                                <a href="#">${rh.houseAddress}</a>
                             </h3>
                             <br>
                             <div class="in-er-right-text">
                             </div>
-                            <div class="price">¥<strong>$XXX $XXX</strong></div>
+                            <div class="price">¥<strong>${rh.housePrice} ${rh.priceUnit}</strong></div>
                         </dd>
                         <div class="clears"></div>
-
                     </dl>
-
+                </c:forEach>
                 <div class="clears"></div>
 
             </div><!--in-er-right/-->

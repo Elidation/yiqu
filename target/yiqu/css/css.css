@@ -70,7 +70,7 @@ img{ max-width:100%; height:auto;}
 
 /*index-fang-list*/
 .index-fang-list{padding:15px 0;}
-.index-fang-list dl{float:left;width:288px; height:243px;margin-right:12px;}
+.index-fang-list dl{float:left;width: 285px; height:243px;margin-right:12px;}
 .index-fang-list dt{width:288px; height:188px;}
 .index-fang-list dt img{width:286px; height:188px;border:#fff 1px solid;}
 .index-fang-list dt a:hover img{border:#f00 1px solid;}
