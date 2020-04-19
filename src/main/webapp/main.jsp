@@ -1,5 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -114,7 +114,7 @@
         <table align="center" width="100%">
             <tr>
                 <td>
-                    <h1 class="logo"><a href="main.jsp"><img src="images/logo.png" width="163" height="59"/></a></h1>
+                    <h1 class="logo"><a href="main.jsp"><img src="${pageContext.request.contextPath}/images/logo.png" width="163" height="59"/></a></h1>
                 </td>
                 <td>
                     <div class="searchbox">
@@ -147,9 +147,9 @@
     <div class="width1190">
         <ul class="nav">
             <li><a href="${pageContext.request.contextPath}/index.jsp">首页</a></li>
-            <li><a href="#">新房</a></li>
-            <li><a href="#">二手房</a></li>
-            <li><a href="#">租房</a></li>
+            <li><a href="${pageContext.request.contextPath}/house/findAllHouse.do?houseType=0">新房</a></li>
+            <li><a href="${pageContext.request.contextPath}/house/findAllHouse.do?houseType=1">二手房</a></li>
+            <li><a href="${pageContext.request.contextPath}/house/findAllHouse.do?houseType=2">租房</a></li>
             <li class="zhiding"><a href="#">指定购房</a></li>
             <li><a href="#">发布房源</a></li>
             <li><a href="#">公告中心</a></li>
@@ -181,15 +181,16 @@
         <h2 class="title"><a style="color:#F1323B">❤</a>新房推荐<a href="#">更多&gt;&gt;</a></h2>
         <div class="index-fang-list">
             <%--FIXME 这里使用Foreach循环，从数据库读取房屋信息 --%>
+            <c:forEach items="${newHouse}" var="nh">
                 <dl>
-                    <dt><a href="#"><img src="#" width="286"
+                    <dt><a href="#"><img src="http://image.cxhit.com/${nh.houseHeadimg}" width="286"
                                          height="188"/></a></dt>
                     <dd>
                         <h3><a href="#"></a></h3>
-                        <div class="hui">XXX | XXX | XXX</div>
+                        <div class="hui">${nh.houseLayout}| ${nh.houseArea} | ${nh.houseDecorate}</div>
                     </dd>
                 </dl>
-
+            </c:forEach>
 
             <div class="clears"></div>
         </div><!--index-fang-list/-->

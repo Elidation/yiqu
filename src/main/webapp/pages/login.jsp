@@ -149,7 +149,7 @@
                         }else if (wer.validate(code)==false){
                             alert("验证码错误")
                         }else{
-                            location.href="${pageContext.request.contextPath}/main.jsp"
+                            location.href="${pageContext.request.contextPath}/house/findAllHouse.do"
                         }
                     }
                 })

@@ -24,8 +24,12 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="typeAliasesPackage" value="com.zjitc.bean"></property>
-
-        <property name="mapperLocations" value="classpath:mapper/UserMapper.xml"/>
+        <property name="mapperLocations">
+            <array>
+                <value>classpath:mapper/UserMapper.xml</value>
+                <value>classpath:mapper/HouseMapper.xml</value>
+            </array>
+        </property>
 
         <property name="plugins">
             <array>
@@ -38,6 +42,12 @@
                     </property>
                 </bean>
             </array>
+        </property>
+
+        <property name="configuration">
+            <bean class="org.apache.ibatis.session.Configuration">
+                <property name="mapUnderscoreToCamelCase" value="true"/>
+            </bean>
         </property>
     </bean>
 

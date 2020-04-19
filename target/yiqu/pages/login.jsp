@@ -137,7 +137,11 @@
                     },
                     success: function (data) {
                         var code=$("input[name=verifyCode]").val();
-                        console.log(code.toLowerCase());
+
+                        if (code == "") {
+                            alert("验证码不能为空")
+                        }
+
                         if (data.reuslt=="0"){
                             alert("用户没有完成注册")
                         }else if (data.reuslt=="1"){
@@ -145,7 +149,7 @@
                         }else if (wer.validate(code)==false){
                             alert("验证码错误")
                         }else{
-                            location.href="${pageContext.request.contextPath}/main.jsp"
+                            location.href="${pageContext.request.contextPath}/house/findAllHouse.do"
                         }
                     }
                 })
