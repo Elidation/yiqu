@@ -16,4 +16,9 @@ public class UserServiceImpl implements UserService {
     public UserInfo findUserByPhone(String phone) {
         return dao.findUserByPhone(phone);
     }
+
+    @Override
+    public void signUp(String phone, String password) {
+        dao.signUp(phone,password);
+    }
 }

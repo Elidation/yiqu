@@ -5,4 +5,9 @@
     <select id="findUserByPhone" parameterType="String" resultType="com.zjitc.bean.UserInfo">
         select * from tb_user where phone = #{phone}
     </select>
+
+    <insert id="signUp" parameterType="String">
+        insert into tb_user (phone,password) values (#{phone},#{password})
+    </insert>
+
 </mapper>

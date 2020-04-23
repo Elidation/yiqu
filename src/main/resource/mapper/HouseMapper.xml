@@ -2,11 +2,23 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.zjitc.dao.HouseDao">
 
-    <select id="findAllHouse" parameterType="java.lang.Integer" resultType="com.zjitc.bean.HouseView">
+    <select id="findAllHouse" parameterType="java.lang.Integer" resultType="com.zjitc.pojo.HouseView">
         select *
         from tb_house as a,tb_house_info as b
         where a.house_id=b.house_id and a.is_delete=0 and a.house_type = #{houseType}
         order by rand()
         limit 4
+    </select>
+
+    <select id="findAllHouseInfo" parameterType="java.lang.Integer" resultType="com.zjitc.pojo.HouseView">
+        select *
+        from tb_house as a,tb_house_info as b
+        where a.house_id=b.house_id and a.is_delete=0 and a.house_type = #{houseType}
+    </select>
+
+    <select id="findHouseById" parameterType="java.lang.Integer" resultType="com.zjitc.pojo.HouseView">
+        select *
+        from tb_house as a,tb_house_info as b
+        where a.house_id=b.house_id and a.is_delete=0 and a.house_id = #{houseId}
     </select>
 </mapper>

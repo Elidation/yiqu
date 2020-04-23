@@ -1,6 +1,7 @@
 package com.zjitc.dao;
 
 import com.zjitc.bean.UserInfo;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -11,7 +12,9 @@ import org.springframework.stereotype.Repository;
 public interface UserDao {
 
     //登录
-    UserInfo findUserByPhone(String phone);
+    UserInfo findUserByPhone(@Param("phone") String phone);
 
+    //註冊
+    void signUp(@Param("phone") String phone, @Param("password") String password);
 }
 

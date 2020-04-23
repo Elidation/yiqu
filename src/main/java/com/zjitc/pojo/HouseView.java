@@ -1,4 +1,4 @@
-package com.zjitc.bean;
+package com.zjitc.pojo;
 
 import java.math.BigDecimal;
 

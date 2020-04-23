@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -11,14 +12,15 @@
 <!--头部最上方的框-->
 <div class="header">
     <div class="width1190">
-        <div class="fl" style="font-size: 14px">您好，欢迎来到<a href="${pageContext.request.contextPath}/index.jsp">易居住房信息平台！</a></div>
+        <div class="fl" style="font-size: 14px">您好，${user.nickname}欢迎来到<a href="${pageContext.request.contextPath}/index.jsp">易居住房信息平台！</a></div>
         <div class="fr">
-
-
-            <a href="${pageContext.request.contextPath}/pages/login.jsp" style="font-size: 14px" target="_blank"><strong>登录</strong></a> |
-            <a href="#" style="font-size: 14px" target="_blank"><strong>注册</strong></a>
-
-
+            <c:if test="${user != null}">
+                <a href="#" style="font-size: 14px" target="_blank"><strong><c:out value="${user.nickname}"></c:out></strong></a> |
+            </c:if>
+            <c:if test="${user == null}">
+                <a href="${pageContext.request.contextPath}/pages/login.jsp" style="font-size: 14px" target="_blank"><strong>登录</strong></a> |
+                <a href="${pageContext.request.contextPath}/pages/signup.jsp" style="font-size: 14px" target="_blank"><strong>注册</strong></a>
+            </c:if>
             <a href="#" style="font-size: 14px" target="_blank"><strong>你好！</strong></a>
 
 

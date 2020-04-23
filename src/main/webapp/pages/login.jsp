@@ -91,7 +91,7 @@
             <div class="reg-logo-right">
                 <h3>如果您没有账号，请</h3>
                 <%--FIXME 这里跳转至【注册页面】--%>
-                <a href="#" class="logo-a" target="_self">立即注册</a>
+                <a href="${pageContext.request.contextPath}/pages/signup.jsp" class="logo-a" target="_self">立即注册</a>
 
                 <br>
 

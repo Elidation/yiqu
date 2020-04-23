@@ -6,18 +6,18 @@
     <title>易居住房信息平台</title>
 
     <!--    下面是几个导入的包-->
-    <link type="text/css" href="css/css.css" rel="stylesheet"/>
-    <link type="text/css" href="css/searchInputStyle.css" rel="stylesheet"/>
-    <link type="text/css" href="css/searchReset.css" rel="stylesheet"/>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery2.min.js"></script>
-    <script type="text/javascript" src="js/js.js"></script>
+    <link type="text/css" href="${pageContext.request.contextPath}/css/css.css" rel="stylesheet"/>
+    <link type="text/css" href="${pageContext.request.contextPath}/css/searchInputStyle.css" rel="stylesheet"/>
+    <link type="text/css" href="${pageContext.request.contextPath}/css/searchReset.css" rel="stylesheet"/>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery2.min.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/js.js"></script>
     <!--    上面是几个导入的包-->
     <script type="text/javascript">
         var picsArr=new Array();
-        picsArr[0]="images/lunbotu/fang1.jpg"
-        picsArr[1]="images/lunbotu/fang2.jpg"
-        picsArr[2]="images/lunbotu/fang3.jpg"
+        picsArr[0]="${pageContext.request.contextPath}/images/lunbotu/fang1.jpg"
+        picsArr[1]="${pageContext.request.contextPath}/images/lunbotu/fang2.jpg"
+        picsArr[2]="${pageContext.request.contextPath}/images/lunbotu/fang3.jpg"
         var index=0;
         var timer=0;
         window.onload=showPic;
@@ -178,7 +178,8 @@
     <div class="width1190">
         <%--【新房推荐】--%>
         <%--FIXME 这里添加跳转事件--%>
-        <h2 class="title"><a style="color:#F1323B">❤</a>新房推荐<a href="#">更多&gt;&gt;</a></h2>
+        <h2 class="title"><a style="color:#F1323B">❤</a>新房推荐
+            <a href="${pageContext.request.contextPath}/house/findAllHouseInfo.do?houseType=0&page=1&size=5">更多&gt;&gt;</a></h2>
         <div class="index-fang-list">
             <%--FIXME 这里使用Foreach循环，从数据库读取房屋信息 --%>
             <c:forEach items="${newHouse}" var="nh">
@@ -198,7 +199,7 @@
 
         <%--旧房推荐--%>
         <h2 class="title"><a style="color:#F1323B">❤</a>二手房推荐 <a
-                href="#">更多&gt;&gt;</a></h2>
+                href="${pageContext.request.contextPath}/house/findAllHouseInfo.do?houseType=1&page=1&size=5">更多&gt;&gt;</a></h2>
         <div class="index-fang-list">
             <c:forEach items="${oldHouse}" var="oh"> <dl>
                 <dt><a href="#"><img src="http://image.cxhit.com/${oh.houseHeadimg}" width="286"
@@ -214,7 +215,7 @@
 
         <%--【二手房推荐】--%>
         <h2 class="title"><a style="color:#F1323B">❤</a>租房推荐 <a
-                href="#">更多&gt;&gt;</a></h2>
+                href="${pageContext.request.contextPath}/house/findAllHouseInfo.do?houseType=2&page=1&size=5">更多&gt;&gt;</a></h2>
         <div class="index-ershou">
 
             <%--左侧栏--%>
