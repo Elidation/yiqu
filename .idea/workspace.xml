@@ -7,56 +7,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab1ba662-c17a-4b30-928c-9d7908ed1f09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/details.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/houses.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/personal.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/personalEdit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/signup.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zjitc/pojo/UserAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/verify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/verifyApply.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjitc/bean/HouseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjitc/pojo/HouseView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjitc/controller/HouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjitc/controller/HouseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zjitc/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjitc/controller/UserInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjitc/dao/HouseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjitc/dao/HouseDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zjitc/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjitc/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjitc/service/HouseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjitc/service/HouseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zjitc/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjitc/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjitc/service/impl/HouseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjitc/service/impl/HouseServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zjitc/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjitc/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resource/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/HouseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/HouseMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/basehead.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/basehead.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/personal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/personal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/personalEdit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/personalEdit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zjitc/bean/HouseView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zjitc/controller/HouseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zjitc/controller/HouseController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zjitc/controller/UserInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zjitc/controller/UserInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zjitc/dao/HouseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zjitc/dao/HouseDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zjitc/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zjitc/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zjitc/service/HouseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zjitc/service/HouseService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zjitc/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zjitc/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zjitc/service/impl/HouseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zjitc/service/impl/HouseServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zjitc/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zjitc/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/HouseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/HouseMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/com/zjitc/bean/HouseView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/com/zjitc/controller/HouseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/com/zjitc/controller/HouseController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/com/zjitc/controller/UserInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/com/zjitc/controller/UserInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/com/zjitc/dao/HouseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/com/zjitc/dao/HouseDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/com/zjitc/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/com/zjitc/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/com/zjitc/service/HouseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/com/zjitc/service/HouseService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/com/zjitc/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/com/zjitc/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/com/zjitc/service/impl/HouseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/com/zjitc/service/impl/HouseServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/com/zjitc/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/com/zjitc/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/mapper/HouseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/mapper/HouseMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/yiqu/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yiqu/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/yiqu/main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/yiqu/pages/basehead.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/yiqu/pages/basehead.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yiqu/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/yiqu/pages/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yiqu/pages/personal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/yiqu/pages/personal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yiqu/pages/personalEdit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/yiqu/pages/personalEdit.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,37 +51,58 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/login.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="149" column="30" lean-forward="true" selection-start-line="149" selection-start-column="30" selection-end-line="149" selection-end-column="30" />
+            <state>
+              <caret line="24" column="243" selection-start-line="24" selection-start-column="229" selection-end-line="24" selection-end-column="243" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/verifyApply.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="53" column="90" selection-start-line="53" selection-start-column="90" selection-end-line="53" selection-end-column="90" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/verify.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/pojo/UserAuth.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/basehead.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="108" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="108" />
+            <state>
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/personalEdit.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/HouseMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state>
+              <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -110,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/controller/UserInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+            <state>
+              <caret line="94" column="44" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,19 +120,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/bean/UserInfo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/personal.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="27" />
+            <state>
+              <caret line="63" column="14" selection-start-line="47" selection-start-column="8" selection-end-line="63" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/UserMapper.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/houses.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state>
+              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -140,33 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/controller/HouseController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="29" column="63" lean-forward="true" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#413#414#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-                <element signature="e#537#538#0" expanded="true" />
-                <element signature="e#591#592#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/main.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="107" column="31" lean-forward="true" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
+            <state>
+              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -202,9 +177,7 @@
         <option value="$PROJECT_DIR$/src/main/resource/db.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/wer.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/css.css" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resource/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zjitc/dao/HouseDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zjitc/service/HouseService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zjitc/service/impl/HouseServiceImpl.java" />
@@ -213,15 +186,22 @@
         <option value="$PROJECT_DIR$/src/main/webapp/pages/houses.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/details.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/signup.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zjitc/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zjitc/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zjitc/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resource/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zjitc/controller/UserInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/signup.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/main.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resource/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/basehead.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/css.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zjitc/pojo/UserAuth.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zjitc/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zjitc/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zjitc/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/personal.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zjitc/controller/UserInfoController.java" />
+        <option value="$PROJECT_DIR$/src/main/resource/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/personalEdit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/verifyApply.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/verify.jsp" />
       </list>
     </option>
   </component>
@@ -264,8 +244,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -336,7 +314,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="zjitc" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiqu" type="b2602c69:ProjectViewProjectNode" />
@@ -393,6 +371,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -408,22 +388,22 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="spring" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\yiqu\src\main\webapp\pages" />
-      <recent name="E:\yiqu\src\main" />
-      <recent name="E:\yiqu\src\main\java" />
-      <recent name="E:\yiqu\src\main\com\zjitc" />
-      <recent name="E:\yiqu\src\main\com" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\yiqu\src\main\webapp\pages" />
       <recent name="E:\yiqu\src\main\resource\mapper" />
       <recent name="E:\yiqu\src\main\java\com\zjitc\bean" />
       <recent name="E:\yiqu\src\main" />
       <recent name="E:\yiqu\src\main\com\zjitc\resource" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\yiqu\src\main\java\com\zjitc\pojo" />
+      <recent name="E:\yiqu\src\main\webapp\pages" />
+      <recent name="E:\yiqu\src\main" />
+      <recent name="E:\yiqu\src\main\java" />
+      <recent name="E:\yiqu\src\main\com\zjitc" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -515,7 +495,7 @@
     </configuration>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -530,6 +510,12 @@
       <workItem from="1587269921424" duration="13276000" />
       <workItem from="1587527568777" duration="24243000" />
       <workItem from="1587626690557" duration="20127000" />
+      <workItem from="1587664923910" duration="325000" />
+      <workItem from="1587709484918" duration="10391000" />
+      <workItem from="1587725606319" duration="3673000" />
+      <workItem from="1587956794591" duration="29685000" />
+      <workItem from="1587997851345" duration="1609000" />
+      <workItem from="1587999528177" duration="376000" />
     </task>
     <task id="LOCAL-00001" summary="易居项目雏形">
       <created>1587175454604</created>
@@ -601,11 +587,18 @@
       <option name="project" value="LOCAL" />
       <updated>1587284439271</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="易居项目登录、注册、首页、房屋详情页，分页，推荐房屋，房屋列表完成">
+      <created>1587665072793</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1587665072793</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84520000" />
+    <option name="totallyTimeSpent" value="130579000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -620,7 +613,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17700455" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16033435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -630,7 +623,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.04918033" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.11803278" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.27704918" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -705,7 +698,8 @@
     <MESSAGE value="易居项目登录页，验证码，手机号，密码验证成功" />
     <MESSAGE value="易居项目首页新房图片完成" />
     <MESSAGE value="易居项目首页完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="易居项目首页完成" />
+    <MESSAGE value="易居项目登录、注册、首页、房屋详情页，分页，推荐房屋，房屋列表完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="易居项目登录、注册、首页、房屋详情页，分页，推荐房屋，房屋列表完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -720,9 +714,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resource/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/city/citydata.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -771,45 +762,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="29" column="59" lean-forward="true" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="70" column="19" lean-forward="true" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/pojo/HouseView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="309" column="29" lean-forward="true" selection-start-line="309" selection-start-column="29" selection-end-line="309" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-111">
-          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -825,23 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/service/HouseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/houses.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/details.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -853,36 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/dao/HouseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="76" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -914,31 +823,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/signup.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="152" column="22" lean-forward="true" selection-start-line="152" selection-start-column="22" selection-end-line="152" selection-end-column="22" />
+        <state relative-caret-position="2682">
+          <caret line="149" column="30" selection-start-line="149" selection-start-column="30" selection-end-line="149" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
+        <state relative-caret-position="288">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/controller/HouseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="29" column="63" lean-forward="true" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -949,55 +844,193 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1458">
+          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1926">
+          <caret line="107" column="31" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/signup.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="152" column="22" lean-forward="true" selection-start-line="152" selection-start-column="22" selection-end-line="152" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="183" column="47" selection-start-line="183" selection-start-column="47" selection-end-line="183" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/dao/HouseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/service/HouseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/pojo/HouseView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="121" selection-start-line="19" selection-start-column="121" selection-end-line="19" selection-end-column="121" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="275">
+          <caret line="32" column="74" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#413#414#0" expanded="true" />
             <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#1097#1098#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/bean/UserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="270">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/controller/UserInfoController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        <state relative-caret-position="131">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="24" column="243" selection-start-line="24" selection-start-column="229" selection-end-line="24" selection-end-column="243" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/main.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/verifyApply.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="107" column="31" lean-forward="true" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
+        <state>
+          <caret line="53" column="90" selection-start-line="53" selection-start-column="90" selection-end-line="53" selection-end-column="90" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/login.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/pojo/UserAuth.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="149" column="30" lean-forward="true" selection-start-line="149" selection-start-column="30" selection-end-line="149" selection-end-column="30" />
+        <state>
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/basehead.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="108" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="108" />
+        <state>
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/personalEdit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/controller/UserInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="94" column="44" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/personal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="63" column="14" selection-start-line="47" selection-start-column="8" selection-end-line="63" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/houses.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zjitc/controller/HouseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/verify.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
         </state>
       </provider>
     </entry>

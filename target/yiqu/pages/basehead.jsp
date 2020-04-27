@@ -25,7 +25,7 @@
 
 
             <a  style="font-size: 14px">欢迎使用</a>　|
-            <a href="#" style="font-size: 14px" target="_blank"><strong>个人中心</strong></a> |
+            <a href="${pageContext.request.contextPath}/pages/personal.jsp" style="font-size: 14px" target="_blank"><strong>个人中心</strong></a> |
             <a href="#" style="font-size: 14px"><strong>退出</strong></a> |
             <a href="javascript:;" onclick="" style="font-size: 14px">加入收藏</a> |
             <a href="javascript:;" onclick="" style="font-size: 14px">设为首页</a>

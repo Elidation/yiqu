@@ -10,4 +10,43 @@
         insert into tb_user (phone,password) values (#{phone},#{password})
     </insert>
 
+    <update id="updUserInfo">
+        update tb_user
+        set truename=#{truename},nickname=#{nickname},gender=#{gender},city=#{city}
+        where phone=#{phone}
+    </update>
+
+    <select id="selectUserAuth" parameterType="String" resultType="com.zjitc.pojo.UserAuth">
+        select *
+        from tb_user_auth
+        where user_id =
+        (
+        select user_id
+        from tb_user
+        where phone = #{phone}
+        )
+    </select>
+
+    <insert id="verify">
+        insert into tb_user_auth
+        (
+        user_id,
+        user_name,
+        user_gender,
+        user_card,
+        user_card_address,
+        user_live_address,
+        auth_status
+        )
+        values
+        (
+        (select user_id from tb_user where phone=#{phone}),
+        #{truename},
+        #{gender},
+        #{card},
+        #{cardaddress},
+        #{liveaddress},
+        #{stastus}
+        )
+    </insert>
 </mapper>

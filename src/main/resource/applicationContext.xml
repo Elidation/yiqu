@@ -10,9 +10,13 @@
 		http://www.springframework.org/schema/tx
 		http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
 
+<!--    引入数据源文件-->
+
     <context:property-placeholder location="classpath:db.properties"/>
 
+<!--    配置数据源-->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+<!--        注入相关数据-->
         <property name="driverClass" value="${jdbc.driver}"/>
         <property name="jdbcUrl" value="${jdbc.url}"/>
         <property name="user" value="${jdbc.username}"/>
@@ -21,46 +25,60 @@
         <property name="minPoolSize" value="2"/>
     </bean>
 
+<!--配置SqlSessionFactory对象-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+<!--       产生sqlSession会话，连接数据库-->
         <property name="dataSource" ref="dataSource"/>
-        <property name="typeAliasesPackage" value="com.zjitc.bean"></property>
+<!--       自动配置实体类别名 -->
+        <property name="typeAliasesPackage" value="com.zjitc.bean"/>
+<!--       自动加载mapper配置-->
         <property name="mapperLocations">
+<!--       用数组的方式进行多个mapper进行自动加载-->
             <array>
                 <value>classpath:mapper/UserMapper.xml</value>
                 <value>classpath:mapper/HouseMapper.xml</value>
             </array>
         </property>
 
+<!--    配置pageHelper分页插件-->
         <property name="plugins">
             <array>
+<!--             加载PageInterceptor，传入插件对象-->
                 <bean class="com.github.pagehelper.PageInterceptor">
+<!--                    加载数据注入-->
                     <property name="properties">
                         <props>
+<!--                            自动监测数据库连接-->
                             <prop key="helperDialect">mysql</prop>
+<!--
+分页合理化参数，默认值为 false 。
+当该参数设置为 true 时， pageNum<=0 时会查询第一页，pageNum>pages （超过总数时），会查询最后一页。
+默认 false 时，直接根据参数进行查询。
+-->
                             <prop key="reasonable">true</prop>
                         </props>
                     </property>
                 </bean>
             </array>
         </property>
-
+<!--开启驼峰命名，对数据库中的字段以及实体类取消大小写以及特殊符号，以保证能够实体类与数据库互通-->
         <property name="configuration">
             <bean class="org.apache.ibatis.session.Configuration">
                 <property name="mapUnderscoreToCamelCase" value="true"/>
             </bean>
         </property>
     </bean>
-
+<!--Mapper扫描器，扫描映射器并且开启sqlSession会话-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.zjitc.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
-
+<!--包扫描器，对指定包内的所有成员进行扫描，主要针对使用注解的对象进行扫描，自动注册为bean-->
     <context:component-scan base-package="com.zjitc"/>
-
+<!--开启事务管理器，服务端请求数据库时失败，则回滚数据；若成功，则执行sql-->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
-
+<!--开启事务注解扫描器-->
     <tx:annotation-driven></tx:annotation-driven>
 </beans>

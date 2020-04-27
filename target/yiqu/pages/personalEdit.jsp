@@ -12,10 +12,10 @@
 <head>
     <title>个人中心</title>
     <%--导入CSS文件--%>
-    <link type="text/css" href="../css/css.css" rel="stylesheet"/>
+    <link type="text/css" href="${pageContext.request.contextPath}/css/css.css" rel="stylesheet"/>
     <%--<link rel="stylesheet" type="text/css" href="../css/city-select.css">--%>
 
-    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery-2.1.1.min.js"></script>
 
 </head>
 <body>
@@ -54,23 +54,23 @@
 <div class="content">
     <div class="width1080">
         <%--左侧导航栏--%>
-        <div class="vip-left">
-            <div class="vipNav">
-                <h3 class="vipTitle">账户中心</h3>
-                <dl>
-                    <dt class="vipIcon3">账户设置</dt>
-                    <dd>
-                        <a href="" class="vipNavCur">我的资料</a>
-                        <a href="">实名认证</a>
-                        <a href="">账户密码设置</a>
-                    </dd>
-                    <dt class="vipIcon1">我的易居</dt>
-                    <dd>
-                        <a href="">我的收藏房源</a>
-                    </dd>
-                </dl>
-            </div><!--vipNav/-->
-        </div><!--vip-left/-->
+            <div class="vip-left">
+                <div class="vipNav">
+                    <h3 class="vipTitle">账户中心</h3>
+                    <dl>
+                        <dt class="vipIcon3">账户设置</dt>
+                        <dd>
+                            <a href="${pageContext.request.contextPath}/pages/personal.jsp" class="vipNavCur">我的资料</a>
+                            <a href="${pageContext.request.contextPath}/pages/verify.jsp">实名认证</a>
+                            <a href="${pageContext.request.contextPath}/pages/psdsetting.jsp">账户密码设置</a>
+                        </dd>
+                        <dt class="vipIcon1">我的易居</dt>
+                        <dd>
+                            <a href="${pageContext.request.contextPath}/user/favorite.do">我的收藏房源</a>
+                        </dd>
+                    </dl>
+                </div><!--vipNav/-->
+            </div><!--vip-left/-->
 
 
         <div class="vip-right">
@@ -81,7 +81,7 @@
                 <tr>
                     <th><span class="red">*</span>手机号码：</th>
                     <td width="600px">
-                        <input class="inp inw" type="text" id="phone" value="" maxlength="14"
+                        <input class="inp inw" type="text" id="phone" name="phone" value="${user.phone}" maxlength="14"
                                disabled="disabled">
                     </td>
                 </tr>
@@ -89,7 +89,7 @@
                     <th><span class="red">*</span>真实姓名：</th>
                     <td>
                         <input class="inp inw" type="text" id="name" name="truename"
-                               value=""
+                               value="${user.truename}"
                                maxlength="14">
                     </td>
                 </tr>
@@ -97,7 +97,7 @@
                     <th><span class="red">*</span>昵　　称：</th>
                     <td>
                         <input class="inp inw" type="text" id="title" name="nickname"
-                               value=""
+                               value="${user.nickname}"
                                maxlength="14">
                     </td>
                 </tr>
@@ -117,7 +117,7 @@
                     <th><span class="red">*</span>城　　市：</th>
                     <td>
                         <input class="inp inw" type="text" name="city" id="city"
-                               value="">
+                               value="${user.city}">
                     </td>
                 </tr>
                 <tr>
@@ -125,10 +125,10 @@
                     <td colspan="2">
                         <label class="butt" id="butt">
                             <input type="button" class="member_mod_buttom" id="member_mod_buttom"
-                                   name="member_mod_buttom" value="保存修改"/>
+                                   name="member_mod_buttom" onclick="a()" value="保存修改"/>
                             <a>　　</a>
                             <input type="button" class="member_mod_buttom2"
-                                   onclick="" name="" value="取消修改"/>
+                                   onclick="location.href='${pageContext.request.contextPath}/pages/personal.jsp'" name="" value="取消修改"/>
                         </label>
                     </td>
                 </tr>
@@ -147,10 +147,34 @@
     <br>
 </div>
 
-<script src="../js/city/jquery1.8.1.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/js/city/jquery1.8.1.js" type="text/javascript"></script>
 <%--<script type="text/javascript" src="../js/city/citydata.min.js"></script>--%>
 <%--<script type="text/javascript" src="../js/city/citySelect-1.0.3.js"></script>--%>
+<script type="text/javascript">
+    var gender=${user.gender};
+    console.log(gender);
+    if (gender==0){
+        $("#rbSex1").attr("checked","checked");
+    }else if (gender==1){
+        $("#rbSex2").attr("checked","checked");
+    }else{
+        console.log("数据库出错")
+    }
 
+    function a(){
+        var truename=$("input[name=truename]").val();
+        var nickname=$("input[name=nickname]").val();
+        var city=$("input[name=city]").val();
+        var phone=$("input[name=phone]").val();
+        var sex=$("input:radio[id=rbSex1]:checked").val();
+        if (sex!=null){
+            var gender= "0";
+        }else{
+            var gender= "1";
+        }
+        location.href="${pageContext.request.contextPath}/user/updUserInfo.do?phone="+phone+"&truename="+truename+"&nickname="+nickname+"&gender="+gender+"&city="+city;
+    }
+</script>
 
 
 <!--这是页脚-->

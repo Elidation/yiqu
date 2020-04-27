@@ -52,7 +52,7 @@
                     <dt class="vipIcon3">账户设置</dt>
                     <dd>
                         <a href="${pageContext.request.contextPath}/pages/personal.jsp" class="vipNavCur">我的资料</a>
-                        <a href="${pageContext.request.contextPath}/user/verify.do">实名认证</a>
+                        <a href="${pageContext.request.contextPath}/pages/verify.jsp">实名认证</a>
                         <a href="${pageContext.request.contextPath}/pages/psdsetting.jsp">账户密码设置</a>
                     </dd>
                     <dt class="vipIcon1">我的易居</dt>
@@ -72,19 +72,19 @@
                 <tr>
                     <th ><span class="red">*</span>手机号码：</th>
                     <td width="600px">
-                        <input class="inp inw" type="text" id="phone" value="" maxlength="14" disabled="disabled">
+                        <input class="inp inw" type="text" id="phone" value="${user.phone}" maxlength="14" disabled="disabled">
                     </td>
                 </tr>
                 <tr>
                     <th><span class="red">*</span>姓　　名：</th>
                     <td>
-                        <input class="inp inw" type="text" id="name" value="" maxlength="14" disabled="disabled">
+                        <input class="inp inw" type="text" id="name" value="${user.truename}" maxlength="14" disabled="disabled">
                     </td>
                 </tr>
                 <tr>
                     <th><span class="red">*</span>昵　　称：</th>
                     <td>
-                        <input class="inp inw" type="text" id="title" value="" maxlength="14" disabled="disabled">
+                        <input class="inp inw" type="text" id="title" value="${user.nickname}" maxlength="14" disabled="disabled">
                     </td>
                 </tr>
                 <tr>
@@ -102,7 +102,7 @@
                 <tr>
                     <th><span class="red">*</span>城　　市：</th>
                     <td>
-                        <input class="inp inw" type="text" id="city" value="" maxlength="14" disabled="disabled">
+                        <input class="inp inw" type="text" id="city" value="${user.city}" maxlength="14" disabled="disabled">
                     </td>
                 </tr>
 
@@ -110,7 +110,7 @@
                     <th>&nbsp;</th>
                     <td colspan="2">
                         <label class="butt" id="butt">
-                            <input type="submit" class="member_mod_buttom" onclick="" value="编辑资料" />
+                            <input type="submit" class="member_mod_buttom" onclick="location.href='${pageContext.request.contextPath}/pages/personalEdit.jsp'" value="编辑资料" />
                         </label>
                     </td>
                 </tr>
@@ -133,8 +133,16 @@
 <%--<script type="text/javascript" src="../js/city/citydata.min.js"></script>--%>
 <%--<script type="text/javascript" src="../js/city/citySelect-1.0.3.js"></script>--%>
 <script type="text/javascript">
+    var gender=${user.gender};
+    console.log(gender);
+    if (gender==0){
+        $("#rbSex1").attr("checked","checked");
+    }else if (gender==1){
+        $("#rbSex2").attr("checked","checked");
+    }else{
+        console.log("数据库出错")
+    }
 </script>
-
 
 <!--这是页脚-->
 <jsp:include page="../pages/basefoot.jsp"></jsp:include>

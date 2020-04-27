@@ -1,6 +1,7 @@
 package com.zjitc.controller;
 
 import com.zjitc.bean.UserInfo;
+import com.zjitc.pojo.UserAuth;
 import com.zjitc.service.UserService;
 import net.sf.json.JSONObject;
 import org.apache.ibatis.annotations.Param;
@@ -9,10 +10,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
+import javax.enterprise.inject.Default;
 import javax.json.JsonObject;
 import javax.servlet.http.HttpSession;
 import javax.xml.registry.infomodel.User;
+import java.time.Year;
 
 @Controller
 @RequestMapping("/user")
@@ -56,5 +60,47 @@ public class UserInfoController {
             jo.put("result","1");
         }
         return jo.toString();
+    }
+
+    @RequestMapping("/updUserInfo.do")
+    public ModelAndView updUserInfo(String phone, String truename, String nickname, Integer gender, String city,HttpSession session
+    ){
+        System.out.println(phone);
+        System.out.println(truename);
+        System.out.println(nickname);
+        System.out.println(gender);
+        System.out.println(city);
+        this.service.updUserInfo(phone,truename,nickname,gender,city);
+        UserInfo user = this.service.findUserByPhone(phone);
+        ModelAndView mv=new ModelAndView();
+//        mv.addObject("user",user);
+        session.setAttribute("user",user);
+        mv.setViewName("redirect:/pages/personal.jsp");
+        return mv;
+    }
+
+    @RequestMapping("/verify.do")
+    public ModelAndView verify(String phone, String truename, Integer sex, String card, String cardaddress, String liveaddress, @RequestParam(defaultValue = "2") String stastus, HttpSession session){
+        System.out.println(phone);
+        System.out.println(truename);
+        System.out.println(sex);
+        System.out.println(card);
+        System.out.println(cardaddress);
+        System.out.println(liveaddress);
+        System.out.println(stastus);
+        UserAuth ua=this.service.selectUserAuth(phone);
+        System.out.println(ua);
+        if (ua!=null){
+            System.out.println("没有找到");
+            session.setAttribute("userAuth",null);
+        }else {
+            System.out.println("传递中");
+            this.service.verify(phone,truename,sex,card,cardaddress,liveaddress,stastus);
+            UserAuth userAuth=this.service.selectUserAuth(phone);
+            session.setAttribute("userAuth",userAuth);
+        }
+        ModelAndView mv=new ModelAndView();
+        mv.setViewName("redirect:/pages/verify.jsp");
+        return mv;
     }
 }
