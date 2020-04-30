@@ -26,5 +26,11 @@ public interface UserDao {
 
     //查询用户实名
     UserAuth selectUserAuth(@Param("phone")String phone);
+
+    //删除实名信息
+    void delUserAuth(@Param("phone")String phone);
+
+    //修改密码
+    void setPwd(@Param("phone")String phone,@Param("password")String password);
 }
 

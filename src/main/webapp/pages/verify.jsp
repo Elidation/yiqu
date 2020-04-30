@@ -11,8 +11,8 @@
 <head>
     <title>实名认证</title>
     <%--导入CSS文件--%>
-    <link type="text/css" href="../css/css.css" rel="stylesheet"/>
-
+    <link type="text/css" href="${pageContext.request.contextPath}/css/css.css" rel="stylesheet"/>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-2.1.1.min.js"/>
 </head>
 <body>
 <%--加入头部--%>
@@ -141,7 +141,7 @@
             <br>
             <div align="center">
                 <label class="butt" id="butt2">
-                    <input type="button" class="member_mod_buttom2" onclick="" value="删除认证"/>
+                    <input type="button" class="member_mod_buttom2" onclick="delAuth()" value="删除认证"/>
                 </label>
             </div>
             </c:if>
@@ -164,8 +164,11 @@
 <jsp:include page="basefoot.jsp"></jsp:include>
 
 </body>
-<script type="text/javascript">
 
+<script type="text/javascript">
+    function delAuth(){
+        location.href="${pageContext.request.contextPath}/user/delUserAuth.do";
+    }
 </script>
 <%--<script type="text/javascript">
     $(function () {

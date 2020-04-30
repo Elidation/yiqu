@@ -37,4 +37,14 @@ public class UserServiceImpl implements UserService {
     public UserAuth selectUserAuth(String phone) {
         return dao.selectUserAuth(phone);
     }
+
+    @Override
+    public void delUserAuth(String phone) {
+        dao.delUserAuth(phone);
+    }
+
+    @Override
+    public void setPwd(String phone, String password) {
+        dao.setPwd(phone,password);
+    }
 }

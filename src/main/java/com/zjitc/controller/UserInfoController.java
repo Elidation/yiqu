@@ -34,6 +34,7 @@ public class UserInfoController {
             if (user.getPassword().equals(password)){
                 System.out.println("登录成功");
                 session.setAttribute("user",user);
+                session.setAttribute("userAuth",this.service.selectUserAuth(phone));
                 jo.put("result","2");
             }else{
                 System.out.println("密码错误");
@@ -102,5 +103,25 @@ public class UserInfoController {
         ModelAndView mv=new ModelAndView();
         mv.setViewName("redirect:/pages/verify.jsp");
         return mv;
+    }
+
+    @RequestMapping("/delUserAuth.do")
+    public String delUserAuth(HttpSession session){
+        System.out.println("进入");
+        UserInfo userInfo=(UserInfo) session.getAttribute("user");
+        this.service.delUserAuth(userInfo.getPhone());
+        UserAuth userAuth = this.service.selectUserAuth(userInfo.getPhone());
+        System.out.println("删除成功");
+        session.setAttribute("userAuth",userAuth);
+        return "redirect:/pages/verify.jsp";
+    }
+
+    @RequestMapping("/setPwd.do")
+    public String setPwd(String password,HttpSession session){
+        UserInfo userInfo=(UserInfo)session.getAttribute("user");
+        this.service.setPwd(userInfo.getPhone(),password);
+        System.out.println("更改成功");
+        session.setAttribute("user",this.service.findUserByPhone(userInfo.getPhone()));
+        return "redirect:/pages/psdsetting.jsp";
     }
 }

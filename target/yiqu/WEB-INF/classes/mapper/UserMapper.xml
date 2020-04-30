@@ -49,4 +49,15 @@
         #{stastus}
         )
     </insert>
+
+    <delete id="delUserAuth" parameterType="String">
+        delete from tb_user_auth
+        where user_id = (select user_id from tb_user where phone = #{phone})
+    </delete>
+
+    <update id="setPwd" parameterType="String">
+        update tb_user
+        set password = #{password}
+        where phone = #{phone}
+    </update>
 </mapper>
